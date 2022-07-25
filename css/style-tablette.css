@@ -1,0 +1,281 @@
+/*//////////////////////////////////////////////////////////*/
+/* Version tablette */
+
+@media screen and (min-width: 768px) and (max-width:  992px)
+{
+	/* Général */
+
+	p
+	{
+		font-size: 20px;
+	}
+
+	h1
+	{
+    	font-size: 30px;
+    	margin-top: 40px;  
+		margin-bottom: 10px; 
+	}
+
+	h2
+	{
+		font-size: 35px;
+	}
+
+	h3
+	{
+		font-size: 22.5px;
+	}
+
+	h4
+	{
+		font-size: 25px;
+	}
+
+	/*////////////////////*/
+	/* Header */
+
+	header
+	{
+		height: 150px;
+	}
+
+	    /* Logo Booki */
+
+	#logo-booki img
+	{
+		width: 150px;
+		height: auto;
+		margin-top: 40px;
+		margin-left: 50px;
+	}
+
+	    /* Navigation interne */
+
+	nav a
+	{
+		font-size: 22px;
+		padding-top: 65px;
+	}
+
+	/*////////////////////*/
+	/* Main */
+
+	/***** Section de recherche *****/
+
+	#preferences /* Général */
+	{
+		background: #F2F2F2;
+		margin-left: -4%;
+		margin-right: -4%;
+		padding-top: 10px;
+		padding-right: 4%;
+		padding-left: 4%;
+	}
+
+	    /* Formulaire */
+
+	#logo-location /* Logo localisation */
+	{
+		border-top: 2px solid #FFFFFF;
+		border-left: 2px solid #FFFFFF;
+		border-bottom: 2px solid #FFFFFF;
+	}
+
+	#form-texte /* Barre de recherche */
+	{
+		border-top: 2px solid #FFFFFF;
+		border-bottom: 2px solid #FFFFFF;
+	}
+
+	#form-bouton-rechercher /* Bouton "rechercher" */
+	{
+		border-top: 2px solid #FFFFFF;
+		border-right: 2px solid #FFFFFF;
+		border-bottom: 2px solid #FFFFFF;
+	}
+
+	    /* Filtres */
+
+	.filtres-logos i /* Logos des filtres */
+	{
+		background: #FFFFFF;
+		margin-top: 22px;
+		margin-left: 21px;
+	}
+
+	.filtres-logos p /* Nom des filtres */
+	{
+		border: 3px solid #FFFFFF;
+		font-size: 19px;
+		padding-left: 70px;
+	}
+
+	.filtres-logos p:hover
+	{
+		background-color: #FFFFFF;
+		border: 3px solid #FFFFFF;
+	}
+
+	    /* Infos */
+
+	#logo-info
+	{
+		margin-top: 18px;
+		border: 2px solid #FFFFFF;
+		background-color: #FFFFFF;
+	}
+
+	/***** Section hébergement *****/
+
+	#hebergement /* Article + Aside */
+	{
+		flex-direction: column-reverse;
+	}
+
+		/* Aside Les plus populaires */
+
+	#hebergement-populaire
+	{
+		width: auto;
+		margin-left: -4%;
+		margin-right: -4%;
+		border-radius: 0px;
+		height: 780px;
+		background-color: #FFFFFF;
+	}
+			/* Titre */
+
+	#hebergement-populaire-titre i /* Logo du titre */
+	{
+		padding-top: 30px;
+		font-size: 38px;
+	}
+
+			/* Liste "les plus populaires" */
+
+	#hebergement-populaire-liste /* Ensemble des cartes hébergement */
+	{
+		height: 600px;
+		width: 700px;
+		margin-left: 6%;
+		margin-right: 6%;
+		margin-bottom: 40px;
+	}
+
+	.hebergement-populaire-carte/* Carte englobant image, titre, paragraphe et logos */
+	{
+		height: 30%;
+		border: none;
+	}
+
+	#hebergement-populaire-liste p /* Paragraphes des cartes hébergement */
+	{
+		font-size: 20px;
+		padding-top: 5px;
+	}
+
+	#hebergement-populaire-liste i /* Logos des cartes hébergement */
+	{
+		font-size: 15px;
+	}
+
+		/* Hébergements à Marseille*/
+	
+	#hebergement-marseille
+	{
+		margin-top: 50px;
+		margin-right: -3%;
+		padding-top: 30px;
+		background-color: #F2F2F2;
+		width: 100%;
+	}
+
+			/* Titre */
+
+	#hebergement-marseille h2
+	{
+		padding-top: 0px;
+		margin-top: 0px;
+	}
+
+			/* Liste des hébergements */
+
+	#hebergement-marseille-liste /* Liste des hébergement */
+	{
+		height: auto;
+	}
+
+	#hebergement-marseille-liste a /* Lien englobant image, titre, paragraphe et logos */
+	{
+		width: 45%;
+		height: 220px;
+	}
+
+	/***** Section activités *****/
+
+	    /* Liste des activités */
+
+	#activite-liste
+	{
+		justify-content: space-around;
+	}
+
+	.activite-colonne /* Colonnes de cartes activité (x4) */
+	{
+	   flex-wrap: wrap;
+	   max-width: 600px;
+	   min-width: 200px;
+	   width: 40%;
+	   max-height: 500px;
+	   height: auto;
+	}
+
+	#colonne-3
+	{
+		order: 4;
+	}
+
+	#colonne-4	
+	{
+		order: 3;
+	}
+
+	#colonne-1 img, 
+	#colonne-3 img /* Image des cartes activité des colonnes 1 et 3 */
+	{
+	    border-radius: 17px 17px 0px 0px;
+	    height: 450px;
+	    max-width: 100%;
+	    width: auto;
+	    object-fit: cover;
+	}
+
+	#colonne-2-carte-h, /* Cartes activité des colonnes 2 et 4 */
+	#colonne-2-carte-b, 
+	#colonne-4-carte-h, 
+	#colonne-4-carte-b 
+	{
+	    padding-bottom: 10px;
+	    min-width: 200px;
+	    max-width: 700px;
+	    width: auto;
+	    background: #FFFFFF;
+	    box-shadow: 6px 6px 15px #E1E1E1;
+	}
+
+	/*////////////////////*/
+	/* Footer */
+
+	footer h4
+	{
+		padding-right: 20%;
+	}
+
+	.footer-liste
+	{
+		width: 40%;
+		margin-bottom: 20px;
+	}
+}
+

@@ -1,0 +1,796 @@
+/* Général */
+* {
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Raleway', Arial, Verdana, Impact, sans-serif;
+    max-width: 1500px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+p
+{
+    font-size: 15px;
+}
+
+h1
+{
+    font-size: 22px;
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+h3
+{
+    font-size: 17px;
+}
+
+h4 
+{
+    font-size: 18px;
+}
+
+/*////////////////////*/
+/* Header */
+
+header
+{
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    padding-left: 3.5%;
+    padding-right: 3.5%;
+}
+
+    /* Logo Booki */
+
+#logo-booki img 
+{
+    width: 100px;
+    height: auto;
+    margin-top: 40px;
+}
+
+    /* Navigation interne */
+
+nav 
+{
+    display: flex;
+    width: auto;
+}
+
+nav a 
+{
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    width: 150px;
+    text-align: center;
+    border-top: 2px solid #FFFFFF;
+}
+
+nav a:hover
+{
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+
+/*////////////////////*/
+/* Main */
+
+main 
+{
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+/***** Section de recherche *****/
+
+    /* Formulaire */
+
+#formulaire /* Général */
+{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#logo-location /* Logo localisation */
+{
+    font-size: 18px;
+    width: 50px;
+    text-align: center;
+    padding-top: 14px;
+    background: #F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+}
+
+#form-texte /* Barre de recherche */
+{
+    height: 50px;
+    width: 100%;
+    padding-left: 15px;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-right: none;
+    border-left: none;
+    font-size: 18px;
+}
+
+#form-bouton-loupe /* Bouton "rechercher" téléphone */
+{
+    display: none;
+}
+
+#form-bouton-rechercher /* Bouton "rechercher" */
+{
+    height: 50px;
+    width: 130px;
+    background: #0065FC;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    position: absolute;
+    font-size: 18px;
+}
+
+    /* Filtres */
+
+#filtres
+{
+    display: flex;
+}
+
+#filtres h3 /* Titre "filtres" */
+{
+    margin-top: 34px;
+    font-size: 18px;
+}
+
+#filtres-liste /* liste des filtres */
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.filtres-logos /* Nom et logos des filtres */
+{
+    display: flex;
+    margin-left: 2%;
+}
+
+.filtres-logos i /* Position et apparence des logos dans les filtres */
+{
+    background: #DEEBFF;
+    border-radius: 50px;
+    padding: 16px;
+    margin-top: 18px;
+    margin-left: 1%;
+    position: absolute;
+    font-size: 20px; 
+    color: #0065FC;
+}
+
+#child /* Apparence du logo "familial" */
+{
+    padding-left: 19px;
+    padding-right: 19px;
+}
+
+.filtres-logos p /* Position et apparence des mots dans les filtres */
+{
+    font-size: 17px;
+    padding: 15px 20px 15px 60px;
+    margin-left: 18px;
+    border: 2px solid #F2F2F2;
+    border-radius: 30px;
+}
+
+.filtres-logos p:hover /* Apparence des filtres au passage de la souris */
+{
+    border: 2px solid #0065FC;
+}
+
+    /* Infos */
+
+#infos
+{
+    display: flex;
+}
+
+#infos p 
+{
+    margin-left: 15px;
+    margin-bottom: 50px;
+}
+
+#logo-info
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 50px;
+    padding: 6px 9px 6px 9px;
+    margin-top: 10px;
+    font-size : 10px; 
+    color: #0065FC;
+}
+
+
+/***** Section hébergement *****/
+
+#hebergement /* Article + Aside */
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+    /* Hébergements à marseille */
+
+#hebergement-marseille 
+{
+    width: 66%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 3%;
+    min-width: 300px;
+}
+
+        /* Titre */
+
+#hebergement-marseille h2
+{
+    padding-left: 5%;
+    padding-top: 30px;
+}
+
+        /* Liste des hébergements */
+
+#hebergement-marseille-liste /* Liste des hébergement */
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+}
+
+#hebergement-marseille-liste a /* Lien englobant image, titre, paragraphe et logos */
+{
+    color: black;
+    text-decoration: none;
+    min-width: 210px;
+    width: 30%;
+    height: 190px;
+    margin-bottom: 40px;
+}
+
+.hebergement-marseille-carte /* Carte englobant image, titre, paragraphe et logos */
+{
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 5px solid #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 25px;
+    margin-right: 3px;
+    margin-left: 3px;
+    box-shadow: 6px 6px 15px #E1E1E1;
+}
+
+.hebergement-marseille-carte:hover
+{
+    transform: scale(1.05);
+}
+
+#hebergement-marseille-liste figure /* Contenants des images */
+{
+    width: 100%;
+    height: 60%;
+    margin: 0px;
+}
+
+#hebergement-marseille-liste img /* Images des cartes hébergement */
+
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px 17px 0px 0px;
+}
+
+#hebergement-marseille-liste h3 /* Titres des cartes hébergement */
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+#hebergement-marseille-liste p /* Paragraphes des cartes hébergement */
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
+
+#hebergement-marseille-liste i /* Logos des cartes hébergement */
+{
+    margin-top: 0px;
+    font-size: 12px; 
+    color: #0065FC
+}
+
+#hebergement-marseille-liste i:nth-child(1) /* Premier logo de chaque carte hébergement */
+{
+    padding-left: 10px;
+}
+
+#logo-carte-hebergement-1 i:nth-child(5), /* Logos étoiles grises */
+#logo-carte-hebergement-3 i:nth-child(5), 
+#logo-carte-hebergement-4 i:nth-child(4), 
+#logo-carte-hebergement-4 i:nth-child(5), 
+#logo-carte-hebergement-5 i:nth-child(5) 
+{
+    color: #F2F2F2;
+}
+
+        /* Bouton "Afficher plus" */
+
+#afficher-plus
+{
+    color: black;
+    text-decoration: none;
+    padding-bottom: 150px;
+    padding-left: 45px;
+    font-size: 18px;
+}
+
+    /* Aside Les plus populaires */
+
+#hebergement-populaire 
+{
+    background: #F2F2F2;
+    height: 640px;
+    min-width: 300px;
+    width: 31%;
+    border-radius: 20px;
+}
+
+        /* Titre */
+
+#hebergement-populaire-titre
+{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-right: 5%;
+    padding-bottom: 10px;
+}
+
+#hebergement-populaire-titre i /* Logo du titre */
+{
+    padding-top: 15px;
+    font-size: 25px
+}
+
+        /* Liste "les plus populaires" */
+
+#hebergement-populaire-liste /* Ensemble des cartes hébergement */
+{
+    flex-direction: column;
+    height: 500px;
+    width: 90%;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+}
+
+#hebergement-populaire-liste a /* Lien englobant image, titre, paragraphe et logos */
+{
+    color: black;
+    text-decoration: none;
+}
+
+.hebergement-populaire-carte /* Carte englobant image, titre, paragraphe et logos */
+{
+    display: flex;
+    height: 27%;
+    width: 100%;
+    margin-bottom: 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    border: 5px solid #FFFFFF;
+    box-shadow: 6px 6px 15px #E1E1E1;
+}
+
+.hebergement-populaire-carte:hover
+{
+    transform: scale(1.05);
+}
+
+.populaire-carte-description /* Partie texte des cartes hébergement */
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+}
+
+#hebergement-populaire-liste figure /* Contenants des images */
+{
+    width: 40%;
+    max-height: 100%;
+    height: auto;
+    margin: 0px;
+}
+
+#hebergement-populaire-liste img /* Images des cartes hébergement */
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 17px 0px 0px 17px;
+}
+
+#hebergement-populaire-liste h3 /* Titres des cartes hébergement */
+{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 17px;
+}
+
+#hebergement-populaire-liste p /* Paragraphes des cartes hébergement */
+{
+    margin-top: 0px;
+    margin-bottom: 5px;
+    padding-left: 17px;
+}
+
+#hebergement-populaire-liste i /* Logos des cartes hébergement */
+{
+    padding-bottom: 10px;
+    font-size: 12px; 
+    color: #0065FC;
+}
+
+#hebergement-populaire-liste i:nth-child(1) /* Premier logo de chaque carte hébergement */
+{
+    padding-left: 17px;
+}
+
+#logo-carte-populaire-2 i:nth-child(5), /* Logos étoiles grises */
+#logo-carte-populaire-3 i:nth-child(5)
+{
+    color: #F2F2F2;
+}
+
+
+/***** Section activités *****/
+
+#activite 
+{
+    min-width: 600px;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 50px;
+}
+
+    /* Liste des activités */
+
+#activite-liste
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.activite-colonne /* Colonnes de cartes activité (x4) */
+{
+   flex-wrap: wrap;
+   max-width: 300px;
+   min-width: 200px;
+   width: 23%;
+   max-height: 500px;
+   height: auto;
+}
+
+#activite-liste a /* Apparence des liens */
+{
+    color: black;
+    text-decoration: none;
+}
+
+#activite-liste h3 /* Titres des cartes activité */
+{
+    padding-top: 7px;
+    margin-left: 5%;
+    font-size: 15px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 10px;
+}
+
+#colonne-1, /* Colonnes ayant une seule carte activité */
+#colonne-3 
+{
+    border-radius: 20px;
+    margin-bottom: 43px;
+    padding-bottom: 10px;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 15px #E1E1E1;
+}
+
+#colonne-1 figure, /* Image des cartes activité des colonnes 1 et 3 */
+#colonne-3 figure 
+{
+    width: 100%;
+    height: 455px;
+    margin: 0px;
+}
+
+#colonne-1 img,
+#colonne-3 img 
+{
+    border-radius: 17px 17px 0px 0px;
+    height: 100%;
+    max-width: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+#colonne-2, 
+#colonne-4 /* Colonnes ayant plusieurs cartes activité */
+{
+    justify-content: space-between;
+    padding-bottom: 10px;
+    margin-bottom: 43px;
+}
+
+#colonne-2-carte-h, /* Cartes activité des colonnes 2 et 4 */
+#colonne-2-carte-b, 
+#colonne-4-carte-h, 
+#colonne-4-carte-b 
+{
+    border-radius: 20px;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding-bottom: 10px;
+    min-width: 200px;
+    max-width: 300px;
+    background: #FFFFFF;
+    box-shadow: 6px 6px 15px #E1E1E1;
+}
+
+#colonne-2-carte-h, 
+#colonne-4-carte-h /* Premières cartes activité des colonnes 2 et 4 */
+{
+    margin-bottom: 47px;
+}
+
+#colonne-2-carte-h /* Première carte activité de la colonne 2 */
+{
+    height: 248px;
+}
+
+#colonne-2-carte-b /* Deuxième carte activité de la colonne 2 */
+{
+    height: 195px;
+}
+
+#colonne-4-carte-h, 
+#colonne-4-carte-b /* Première carte activité de la colonne 4 */
+{
+    height: 222px;
+}
+
+#colonne-1:hover,
+#colonne-2-carte-h:hover,
+#colonne-2-carte-b:hover,
+#colonne-3:hover,
+#colonne-4-carte-h:hover,
+#colonne-4-carte-b:hover
+{
+    transform: scale(1.05);
+}
+
+#colonne-2 figure,
+#colonne-4 figure
+{
+    width: 100%;
+    margin: 0px;
+}
+
+#img-2h, /* Images des cartes activité des colonnes 2 et 4 */
+#img-2b,
+#img-4h,
+#img-4b
+{
+    border-radius: 17px 17px 0px 0px;
+}
+
+#img-2h
+{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#img-2b
+{
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+}
+
+#img-4h, 
+#img-4b
+{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+}
+
+
+/*////////////////////*/
+/* Footer */
+
+footer 
+{
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 100%;
+    flex-wrap: wrap;
+    background: #F2F2F2;
+}
+
+.footer-liste
+{
+    padding-left: 5%;
+    width: 28%;
+    min-width: 230px;
+}
+
+.footer-liste a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.footer-liste ul 
+{
+    list-style: none;
+}
+
+.footer-liste li 
+{
+    margin-top: 15px;
+    margin-left: -40px;
+}
+
+
+/*//////////////////////////////////////////////////////////*/
+/* Version ordinateur petit écran */
+
+@media screen and (min-width: 992px) and (max-width:  1280px)
+{
+    /* Général */
+
+    h2
+    {
+        font-size: 17px;
+    }
+
+    h3
+    {
+        font-size: 14px;
+    }
+
+    h4 
+    {
+        font-size: 15px;
+    }
+
+    /*////////////////////*/
+    /* Main */
+
+    /***** Section de recherche *****/
+
+    .filtres-logos p /* Position et apparence des mots dans les filtres */
+    {
+        font-size: 16px;
+    }
+
+    .filtres-logos i /* Position et apparence des logos dans les filtres */
+    {
+        margin-top: 17px;
+    }
+
+    /***** Section hébergement *****/
+
+        /* Hébergements à marseille */
+
+    #hebergement-marseille h2 /* Titre hébergement à marseille */
+    {
+        padding-top: 10px;
+    }
+
+    #hebergement-marseille-liste a /* Lien englobant image, titre, paragraphe et logos */
+    {
+        min-width: 165px;
+        width: 30%;
+        height: 150px;
+        margin-bottom: 30px;
+    }
+
+    #hebergement-marseille-liste h3 /* Titre des cartes hébergement */
+    {
+        padding-left: 5px;
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    #hebergement-marseille-liste p /* Paragraphes des cartes hébergement */ 
+    {
+        padding-left: 5px;
+        margin-bottom: 0px;
+    }
+
+    #hebergement-marseille-liste i:nth-child(1) /* Premier logo des cartes hébergement */
+    {
+        padding-left: 5px;
+    }
+
+    .hebergement-marseille-carte /* Cartes hébergement */
+    {
+        border: 4px solid #FFFFFF;
+    }
+
+        /* Aside Les plus populaires */
+
+    #hebergement-populaire-titre /* Titre des "populaires à marseille" */
+    {
+        padding-top: 10px;
+        padding-bottom: 0px;
+    }
+
+    #hebergement-populaire-titre i /* Logo "populaire à marseille" */
+    {
+        font-size: 20px;
+    }
+
+    #hebergement-populaire /* Aside populaires à marseille */
+    {
+        height: 500px;
+    }
+
+    #hebergement-populaire-liste /* Ensemble des cartes hébergement populaire */
+    {
+        height: 400px;
+    }
+
+    .hebergement-populaire-carte/* Cartes hébergement populaire */
+    {
+        border: 4px solid #FFFFFF;
+    }
+
+
+    /*////////////////////*/
+    /* Footer */
+
+    li /* Elements de la liste footer */
+    {
+        font-size: 13px;
+    }
+}
